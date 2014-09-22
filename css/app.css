@@ -1,0 +1,150 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 740px;
+  background: #fdfdfd;
+  background: linear-gradient(to bottom,  #fdfdfd 0%, #eaf0f9 100%);
+}
+
+.datastax-bg-topright {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 64px;
+  width: 164px;
+  background: url(../images/datastax-fdfdfd.png);
+  background-size: 100% auto;
+}
+
+.cassandra-summit-botleft {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  height: 1em;
+  width: 16em;
+}
+
+.cassandra-summit-botright {
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+  height: 1em;
+  width: 16em;
+  text-align: right;
+}
+
+@media screen and (max-width: 800px) {
+  .cassandra-summit-botleft  { visibility: hidden; display: none; }
+  .cassandra-summit-botright { visibility: hidden; display: none; }
+}
+
+.loading {
+  position: fixed;
+  top: 15%;
+  left: 25%;
+}
+
+b, strong { font-weight: bold; }
+i, em { font-style: italic; }
+
+label {
+  font-weight: normal !important;
+}
+
+#top_row {
+  height: 70px;
+}
+
+#top_left {
+  font-size: 12px;
+}
+#top_middle {
+  font-size: 12px;
+}
+#top_right {
+  font-size: 12px;
+}
+
+#mid_row {
+  height: 840px;
+  margin-bottom: 2em;
+}
+
+#mid_left {
+  overflow: visible;
+  height: 700px;
+  background: rgb(215, 215, 215);
+  background: radial-gradient(rgb(240, 240, 240), rgb(220, 220, 220));
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  font-size: 12px;
+}
+#mid_middle {
+  height: 840px;
+  font-size: 12px;
+}
+#mid_right {
+  height: 840px;
+  font-size: 12px;
+}
+
+#bot_row {
+  width: 100%;
+  min-height: 3em;
+  margin-bottom: 30px;
+}
+#bot_left {
+  font-size: 12px;
+}
+#bot_right {
+  font-size: 12px;
+}
+
+#footer_row {
+  width: 100%;
+  visibility: hidden;
+  display: none;
+}
+
+#foot_left {
+  height: 20px;
+}
+
+#foot_right {
+  height: 20px;
+  text-align: right;
+}
+
+@media screen and (min-height: 1000px) and (min-width: 1000px) {
+  #foot_row {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+	width: 100%;
+  	visibility: show;
+  	display: block;
+  }
+}
+
+.box-device-name {
+  font-size: 24px;
+  stroke: rgba(16, 64, 200, 0.25);
+  fill: rgba(255, 255, 255, 0.25);
+}
+
+.box-whisker-bg {
+  fill: rgba(255, 255, 255, 0);
+}
+
+.box {
+  font-weight: bold;
+}
+.box .center { stroke-dasharray: 3,3; }
+.box .outlier { fill: none; stroke: #ccc; }
+.box line, .box rect, .box circle {
+  fill: white;
+  stroke: black;
+  stroke-width: 1.5px;
+}
